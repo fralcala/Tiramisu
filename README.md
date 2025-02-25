@@ -17,12 +17,19 @@ Understanding of why we are doing this project
 List color palette used and rationale for top level layout decisions.
 
 **Brown Derby**
+
 - #4c2B15
+
 **Cooper**
+
 - #AC7035
+
 **Bone**
+
 - #DECAB2
+
 **White**
+
 - #fff
 
 
