@@ -24,6 +24,8 @@ body {
     background-color: #fff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Style for container div */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,6 +33,7 @@ body {
     overflow: hidden;
 }
 
+/* Nav style */
 header {
     background-color: #4c2B15;
     color: #fff;
@@ -70,6 +73,7 @@ nav {
     background-color: #AC7035;
 }
 
+/* Footer css */
 footer{
     position: relative;
    left: 0;
