@@ -1,13 +1,11 @@
-
-*{
-    padding: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
-body{
-    height: 100%;
-    
+body {
+  height: 100%;
 }
 
 h1,
@@ -16,75 +14,111 @@ h3,
 h4,
 h5,
 h6,
-p{
-    margin-bottom: 16px;
+p {
+  margin-bottom: 16px;
 }
 
 body {
-    background-color: #fff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Style for container div */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
 }
 
 /* Nav style */
 header {
-    background-color: #4c2B15;
-    color: #fff;
-    padding: 10px 0;
-    max-height: 90px;
+  background-color: #4c2b15;
+  color: #fff;
+  padding: 10px 0;
+  max-height: 90px;
 }
 
 #logo {
-    float: left;
-    font-size: 1.5em;
+  float: left;
+  font-size: 1.5em;
 }
 
 nav {
-    float: right;
+  float: right;
 }
 
 .nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    transition: background-color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
 .nav-links li a:hover {
-    background-color: #AC7035;
+  background-color: #ac7035;
+}
+
+/* Prompt 1 */
+
+.product {
+  max-width: 40vw;
+
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product img {
+  height: 180px;
+  width: 215px;
+  /* margin-right: 2em; */
+}
+
+.productDesc {
+  min-height: 180px;
+  max-height: 180px;
+  margin-left: 2em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 1em 0;
+}
+
+.productDesc h3 {
+  margin: 0 !important;
+}
+.productDesc p {
+  margin: 0 !important;
 }
 
 /* Footer css */
-footer{
-    position: relative;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: #4c2B15;
-   text-align: center;
-   margin-bottom: 40px;
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #4c2b15;
+  text-align: center;
+  margin-bottom: 40px;
 }
-footer p{
-    color: #4c2B15;
-    margin-bottom: 40px;
-
+footer p {
+  color: #4c2b15;
+  margin-bottom: 40px;
 }

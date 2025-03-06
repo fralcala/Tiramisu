@@ -6,34 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiramisu</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./prompt1.css" />
   </head>
-  
+
   <body>
-    <header> 
+    <header>
+      <div class="container">
+        <div id="logo">Tiramisu</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/"> Home </a></li>
+            <li><a href="/prompt1">Invoice Generation</a></li>
+            <li><a href="/prompt2">Course Completion</a></li>
+            <li><a href="/prompt3">Event Ticket </a></li>
+            <li><a href="/prompt4">Restaurant Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container">
-    <div id="logo">Tiramisu</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="/">  Home </a></li>
-                    <li><a href="/prompt1">Invoice Generation</a></li>
-                    <li><a href="/prompt2">Course Completion</a></li>
-                    <li><a href="/prompt3">Event Ticket </a></li>
-                    <li><a href="/prompt4">Restaurant Menu</a></li>
-                </ul>
-            </nav>
-          </div>
-</header>
-            <div class="container">
-      <h1>Prompt 1</h1>
+      <h1>Products</h1>
 
-            
-            </div>
-   
-    
+      <div class="product">
+        <img
+          src="../assets/TirProd1.jpg"
+          alt="Fresh Italian Tiramisu - 6 * 85g glasses"
+        />
+        <div class="productDesc">
+          <h3>Fresh Italian Tiramisu</h3>
+          <p>$18.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="product">
+        <img
+          src="../assets/TirProd2.jpg"
+          alt="Italian Wine-Flavored Tiramisu"
+        />
+        <div class="productDesc">
+          <h3>Italian Wine-Flavored Tiramisu</h3>
+          <p>$16.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="js/app.js"></script>
-
   </body>
 
-  <footer><p> © 2025 by Tiramisu Team | All Rights Reserved</p></footer>
-
+  <footer><p>© 2025 by Tiramisu Team | All Rights Reserved</p></footer>
 </html>
