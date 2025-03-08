@@ -32,9 +32,26 @@ List color palette used and rationale for top level layout decisions.
 
 - #fff
 
-
-
-
 ### Members & Responsibilities
 
 List all members and their roles
+
+### Francis Alcala
+
+President – Submit assignment, write Link & Project Summary section
+Course Completion Certificate Prompt
+
+### CJ Eilenstine
+
+Scrum Master – Write Members & Responsibilities section
+Invoice Generation Prompt
+
+### Kiara Castillo Magallanes
+
+Designer – Write Design Choices section
+Restaurant Menu Receipt
+
+### Selam Yosief
+
+Analyst – Write Key Takeaways section
+Event Ticket Prompt
