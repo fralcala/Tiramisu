@@ -2,7 +2,8 @@
 
 ### Project Summary
 
-Brief description of your what your project is about and why you chose that topic.
+In this project we implement pdfGenerator and use Node.js HTTP. Each member has their own prompt that they work on.
+Our project topic is tiramisu, we chose tiramisu because it is a dessert and it tastes good.
 
 ### Live Link
 
@@ -31,9 +32,6 @@ List color palette used and rationale for top level layout decisions.
 **White**
 
 - #fff
-
-
-
 
 ### Members & Responsibilities
 
