@@ -36,11 +36,24 @@ const addButtons = document.querySelectorAll(".cartAdd");
 
 addButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    const index = this.getAttribute("data-index");
-    AddtoCart(products[index]);
+    const i = this.getAttribute("data-index");
+    AddtoCart(products[i]);
   });
 });
 
 function AddtoCart(product) {
   const cart = document.getElementById("cart");
+
+  cart.innerHTML += `
+  <div class="product">
+          <img
+            src="${product.image}"
+            alt="${product.alt}"
+          />
+          <div class="productDesc">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+          </div>
+        </div>
+  `;
 }
