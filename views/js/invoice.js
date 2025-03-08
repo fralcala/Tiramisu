@@ -3,13 +3,13 @@ const products = [
     image: "../assets/TirProd1.jpg",
     alt: "Fresh Italian Tiramisu - 6 * 85g glasses",
     name: "Fresh Italian Tiramisu",
-    price: "$18.99",
+    price: 18.99,
   },
   {
     image: "../assets/TirProd2.jpg",
     alt: "Italian Wine-Flavored Tiramisu",
     name: "Italian Wine-Flavored Tiramisu",
-    price: "$16.99",
+    price: 16.99,
   },
 ];
 const productList = document.getElementById("productList");
@@ -25,7 +25,7 @@ for (let i = 0; i < products.length; i++) {
           />
           <div class="productDesc">
             <h3>${products[i].name}</h3>
-            <p>${products[i].price}</p>
+            <p>$${products[i].price}</p>
             <button class="cartAdd" data-index="${i}">Add to Cart</button>
           </div>
         </div>
@@ -38,6 +38,7 @@ addButtons.forEach((button) => {
   button.addEventListener("click", function () {
     const i = this.getAttribute("data-index");
     AddtoCart(products[i]);
+    getTotal(products[i]);
   });
 });
 
@@ -55,5 +56,17 @@ function AddtoCart(product) {
             <p>${product.price}</p>
           </div>
         </div>
+  `;
+}
+
+const totalPrice = document.getElementById("total");
+
+let total = 0;
+
+function getTotal(product) {
+  total += product.price;
+
+  totalPrice.innerHTML = `
+  <h2>$${total}</h2>
   `;
 }
