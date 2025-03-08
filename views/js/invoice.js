@@ -36,12 +36,11 @@ const addButtons = document.querySelectorAll(".cartAdd");
 
 addButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    const index = this.getAttribute("data-index"); // Get the index of the product
-    AddtoCart(products[index]); // Pass the product to the function
+    const index = this.getAttribute("data-index");
+    AddtoCart(products[index]);
   });
 });
 
-// Function to handle adding to cart
 function AddtoCart(product) {
-  console.log("Added to cart:", product.name, product.price);
+  const cart = document.getElementById("cart");
 }
