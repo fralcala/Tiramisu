@@ -25,24 +25,24 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 **Brown Derby**
 - #4c2B15
 
-- Used: Titles, bold text, design in nav, buttons
+- Used for: Titles, bold text, design in nav, buttons
 
 
 **Cooper**
 - #AC7035
 
-- Used: Subtitles, buttons, hover
+- Used for: Subtitles, buttons, hover
 
 **Bone**
 - #DECAB2
 
-- Used: Backgrounds
+- Used for: Backgrounds
 
 
 **White**
 - #fff
 
-- Used: Backgrounds
+- Used for: Backgrounds
 
 
 ### Members & Responsibilities

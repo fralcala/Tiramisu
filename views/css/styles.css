@@ -130,6 +130,19 @@ nav {
   background-color: #ac7035;
 }
 
+/* 404 style*/
+.nf {
+  color: #ac7035;
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+
+.nfp{
+  text-align: center;
+  margin-top: -220px;
+  margin-bottom: 16%;
+}
 /* Prompt 1 */
 
 .productList {
