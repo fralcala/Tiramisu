@@ -24,29 +24,68 @@
           </div>
 </header>
             <div class="container">
-      <h1>Restaurant Menu Receipt</h1>
+      <h1 class="title_prompt">Restaurant Menu Receipt</h1>
 
-      
+      <h1 class="sub-title-p">Cocktails</h1>
+      <h2 class="sub-title-p2"> - Menu -</h2>
+ 
       <!--  
       Scenario:
 
 A user selects food items from a restaurant’s menu. Users should be able to see a list of menu items (at least 2) and add them to a cart. Users can then click on a button to view the receipt and another to download the receipt.
 
- 
-
 PDF Details:
 
 Show the following on the pdf:
 
-header with a company name (name can be anything of your choice)
-sub-heading showing date (date of generation)
-list of menu items that user has in cart
-each line should have product name, price, quantity, and line total
-grand total for the receipt
+- header with a company name (name can be anything of your choice)
+- sub-heading showing date (date of generation)
+- list of menu items that user has in cart
+- each line should have product name, price, quantity, and line total
+- grand total for the receipt
       -->
+      <!-- Menu items -->
+       <div class="menu-container">
+      <div class="card">
+        <span class="favorite">&#9825;</span>
+        <img src="media/cherry.png" alt="Drink 1">
+        <div class="item-name">Little Cherry</div>
+        <div class="item-price">$10.99</div>
+        <button class="add-btn">+</button>
+    </div>
+    <div class="card">
+        <span class="favorite">&#9825;</span>
+        <img src="media/pinky.jpg" alt="Drink 2">
+        <div class="item-name">Pinky</div>
+        <div class="item-price">$12.00</div>
+        <button class="add-btn">+</button>
+    </div>
+
+    <div class="card">
+      <span class="favorite">&#9825;</span>
+      <img src="media/creme_chocolatini.jpg" alt="Drink 3">
+      <div class="item-name">Chocolatini</div>
+      <div class="item-price">$14.95</div>
+      <button class="add-btn">+</button>
+  </div>
+  <div class="card">
+      <span class="favorite">&#9825;</span>
+      <img src="media/michelada.jpg" alt="Drink 4">
+      <div class="item-name">Michelada</div>
+      <div class="item-price">$9.99</div>
+      <button class="add-btn">+</button>
+  </div>
+</div>
+
+<div class="cart-prompt4">
+  <h1 class="sub-title">Cart</h1>
 
 
+</div>
 
+      <section>
+        <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+      </section>
             
             </div>
    

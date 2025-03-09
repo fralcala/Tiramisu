@@ -17,21 +17,33 @@ Understanding of why we are doing this project
 
 List color palette used and rationale for top level layout decisions.
 
-**Brown Derby**
+**Font Style**
+``` 
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+```
 
+**Brown Derby**
 - #4c2B15
 
-**Cooper**
+- Used: Titles, bold text, design in nav, buttons
 
+
+**Cooper**
 - #AC7035
 
-**Bone**
+- Used: Subtitles, buttons, hover
 
+**Bone**
 - #DECAB2
 
-**White**
+- Used: Backgrounds
 
+
+**White**
 - #fff
+
+- Used: Backgrounds
+
 
 ### Members & Responsibilities
 
