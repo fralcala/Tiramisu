@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiramisu</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
@@ -23,16 +23,103 @@
         </nav>
       </div>
     </header>
+
     <div class="container">
       <h1>Prompt 2</h1>
 
       <section>
-        <iframe id="pdf-preview" src="" frameborder="0"></iframe>
+        <ul class="quiz">
+          <h2>Quiz</h2>
+          
+          <li>
+            <h3>Which is NOT an ingredient used to make tiramisu?</h3>
+            <ul class="question">
+              <li>
+              <input type="radio" name="q1" value="vanilla-extract"></input>
+              <span id="option1">Vanilla Extract</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q1" value="lady-fingers"></input>
+              <span id="option2">Lady Fingers</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q1" value="water"></input>
+              <span id="option3">Water</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q1" value="granulated-sugar"></input>
+              <span id="option4">Granulated Sugar</span>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Does tiramisu taste good?</h3>
+            <ul class="question">
+              <li>
+              <input type="radio" name="q2" value="yes"></input>
+              <span id="option1">yes</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q2" value="yes"></input>
+              <span id="option2">YES</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q2" value="yes"></input>
+              <span id="option3">Yes.</span>
+              </li>
+
+              <li>
+              <input type="radio" name="q2" value="yes"></input>
+              <span id="option4">Ye</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="button-container">
+          <button id="submit-button">Submit</button>
+        </div>
+
+        <p id="result"></p>
+
+        <!-- <iframe
+          class="course-pdf"
+          id="pdf-preview"
+          src=""
+          frameborder="0"
+        ></iframe> -->
       </section>
     </div>
+    <!-- <script>
+      function checkAnswers() {
+  const answers = {
+    q1: "water",
+    q2: "yes",
+  };
 
-    <script type="module" src="/views/js/app.js"></script>
-    <script type="module" src="/views/js/course.js"></script>
+  let score = 0;
+
+  for (let key in answers) {
+    const selectedOption = document.querySelector(
+      `input[name="${key}"]:checked`
+    );
+    if (selectedOption && selectedOption.value === answers[key]) {
+      score++;
+    }
+  }
+
+  document.getElementById("result").innerText = `You scored ${score} out of 2!`;
+}
+    </script> -->
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/course.js"></script>
   </body>
 
   <footer><p>© 2025 by Tiramisu Team | All Rights Reserved</p></footer>
