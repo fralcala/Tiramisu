@@ -51,14 +51,14 @@ Show the following on the pdf:
         <img src="media/cherry.png" alt="Drink 1">
         <div class="item-name">Little Cherry</div>
         <div class="item-price">$10.99</div>
-        <button class="add-btn">+</button>
+        <button class="add-btn" data-name="Little Cherry" data-price="10.99">+</button>
     </div>
     <div class="card">
         <span class="favorite">&#9825;</span>
         <img src="media/pinky.jpg" alt="Drink 2">
         <div class="item-name">Pinky</div>
         <div class="item-price">$12.00</div>
-        <button class="add-btn">+</button>
+        <button class="add-btn" data-name="Pinky" data-price="12.00">+</button>
     </div>
 
     <div class="card">
@@ -66,24 +66,33 @@ Show the following on the pdf:
       <img src="media/creme_chocolatini.jpg" alt="Drink 3">
       <div class="item-name">Chocolatini</div>
       <div class="item-price">$14.95</div>
-      <button class="add-btn">+</button>
+      <button class="add-btn" data-name="Chocolatini" data-price="14.95">+</button>
   </div>
   <div class="card">
       <span class="favorite">&#9825;</span>
       <img src="media/michelada.jpg" alt="Drink 4">
       <div class="item-name">Michelada</div>
       <div class="item-price">$9.99</div>
-      <button class="add-btn">+</button>
+      <button class="add-btn" data-name="Michelada" data-price="9.99">+</button>
   </div>
 </div>
 
+<!-- cart -->
 <div class="cart-prompt4">
   <h1 class="sub-title">Cart</h1>
+        <ul id="cart-items"></ul>
+
+        <!--total cart-->
+        <ul id="cart-total">
+          <li id="total-price" style="font-weight: bold; color: #4c2b15;">Total: $0.00</li>
+      </ul>
+        <button id="generate-receipt" class="btn-pdf">View Receipt</button>
+        <button id="download-receipt"class="btn-pdf">Download Receipt</button>
 
 
 </div>
 
-      <section>
+     <section>
         <iframe id="pdf-preview" src="" frameborder="0"></iframe>
       </section>
             
