@@ -64,3 +64,16 @@ Designer – Write Design Choices section || Restaurant Menu Receipt
 ### Selam Yosief
 
 Analyst – Write Key Takeaways section || Event Ticket Prompt
+
+
+- Learned how to use Node.jsto create a basic web server and serves different pages.  
+
+- Used js classes to organize code and extend from app.js parent class.  
+
+- Created interactive PDFs that users can preview and download.  
+
+- Practiced frontend and backend by linking HTML, JavaScript, and a server.  
+
+- Improved teamwork skills by working on separate modules while sharing common code.  
+
+
