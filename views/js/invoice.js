@@ -85,6 +85,8 @@ function getTotal(product) {
   totalPrice.innerHTML = `
   <h2>$${total}</h2>
   `;
+
+  return total;
 }
 
 class Invoice extends GeneratePdf {
@@ -93,6 +95,10 @@ class Invoice extends GeneratePdf {
       const element = cartProducts[i];
       this.addText(`${element.name} - $${element.price}`);
     }
+  }
+
+  printTotal() {
+    this.addText(`Total: $${total}`);
   }
 }
 
@@ -103,13 +109,18 @@ preview.addEventListener("click", function () {
 });
 
 function generateInvoice() {
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString();
+
   const invCont = document.getElementById("invoiceCont");
   invCont.innerHTML = `
     <iframe id="invoice" src="" frameborder="0"></iframe>`;
 
   const myPDF = new Invoice("invoice");
 
-  myPDF.addHeader("Invoice");
+  myPDF.addHeader("Invoice        Tiramisu");
+  myPDF.addText(`Date: ${formattedDate}`);
   myPDF.printItems();
+  myPDF.printTotal();
   myPDF.showPdf();
 }
