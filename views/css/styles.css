@@ -142,6 +142,10 @@ nav {
 }
 /* Prompt 1 */
 
+#invoice {
+  margin-top: 30px;
+}
+
 .productList {
   /* display: flex;
   align-items: center;

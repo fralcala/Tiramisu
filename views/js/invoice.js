@@ -61,16 +61,8 @@ function cartRender() {
     const element = cartProducts[i];
 
     cart.innerHTML += `
-  <div class="product">
-          <img
-            src="${cartProducts[i].image}"
-            alt="${cartProducts[i].alt}"
-          />
-          <div class="productDesc">
             <h3>${cartProducts[i].name}</h3>
-            <p>$${cartProducts[i].price}</p>
-          </div>
-        </div>
+            <p>$${cartProducts[i].price}</p>       
   `;
   }
 }
@@ -123,4 +115,10 @@ function generateInvoice() {
   myPDF.printItems();
   myPDF.printTotal();
   myPDF.showPdf();
+
+  let down = document.getElementById("download");
+
+  down.addEventListener("click", function () {
+    myPDF.downloadPdf();
+  });
 }
