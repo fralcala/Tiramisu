@@ -1,7 +1,7 @@
 import { GeneratePdf } from "./app.js";
 console.log("it be workin");
 
-class Certificate extends GeneratePdf {}
+// class Certificate extends GeneratePdf {}
 
 const section = document.getElementById("section");
 
@@ -38,17 +38,16 @@ function checkAnswers() {
     </div>
   </div>
   `;
-  function getName() {
-    let name = document.getElementById("name");
 
-    let value = name.value;
-
-    console.log(value);
-    return name;
-  }
   const userName = document.getElementById("pdf-button");
   userName.addEventListener("click", function () {
-    getName();
+    // getting name
+    let name = document.getElementById("name");
+    let value = name.value;
+
+    // getting date
+    const date = new Date();
+    const formattedDate = date.toLocaleDateString();
 
     document.getElementById("pdf-holder").innerHTML = `<iframe
           class="course-pdf"
@@ -56,17 +55,16 @@ function checkAnswers() {
           src=""
           frameborder="0"
         ></iframe>`;
+
     const myPdf = new GeneratePdf("pdf-preview");
 
     myPdf.addHeader("Tiramisu Course");
     myPdf.addHeader("Certificate Of Completion");
-    myPdf.addText(`To: ${name.value}`);
+    myPdf.addText(`To: ${value}`);
+    myPdf.addText(`${value} completed this course on ${formattedDate}`);
 
     myPdf.showPdf();
   });
 }
 const check = document.getElementById("submit-button");
 check.addEventListener("click", checkAnswers);
-
-/*const d = new Date("2021-03-25");
-d.getFullYear();*/
