@@ -25,24 +25,24 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 **Brown Derby**
 - #4c2B15
 
-- Used: Titles, bold text, design in nav, buttons
+- Used for: Titles, bold text, design in nav, buttons
 
 
 **Cooper**
 - #AC7035
 
-- Used: Subtitles, buttons, hover
+- Used for: Subtitles, buttons, hover
 
 **Bone**
 - #DECAB2
 
-- Used: Backgrounds
+- Used for: Backgrounds
 
 
 **White**
 - #fff
 
-- Used: Backgrounds
+- Used for: Backgrounds
 
 
 ### Members & Responsibilities
@@ -64,3 +64,16 @@ Designer – Write Design Choices section || Restaurant Menu Receipt
 ### Selam Yosief
 
 Analyst – Write Key Takeaways section || Event Ticket Prompt
+
+
+- Learned how to use Node.jsto create a basic web server and serves different pages.  
+
+- Used js classes to organize code and extend from app.js parent class.  
+
+- Created interactive PDFs that users can preview and download.  
+
+- Practiced frontend and backend by linking HTML, JavaScript, and a server.  
+
+- Improved teamwork skills by working on separate modules while sharing common code.  
+
+

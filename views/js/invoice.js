@@ -1,3 +1,5 @@
+import { GeneratePdf } from "./app.js";
+
 const products = [
   {
     image: "../assets/TirProd1.jpg",
@@ -12,6 +14,8 @@ const products = [
     price: 16.99,
   },
 ];
+const cartProducts = [];
+
 const productList = document.getElementById("productList");
 
 for (let i = 0; i < products.length; i++) {
@@ -26,7 +30,7 @@ for (let i = 0; i < products.length; i++) {
           <div class="productDesc">
             <h3>${products[i].name}</h3>
             <p>$${products[i].price}</p>
-            <button class="cartAdd" data-index="${i}">Add to Cart</button>
+            <button class="cartAdd btn" data-index="${i}">Add to Cart</button>
           </div>
         </div>
   `;
@@ -37,26 +41,30 @@ const addButtons = document.querySelectorAll(".cartAdd");
 addButtons.forEach((button) => {
   button.addEventListener("click", function () {
     const i = this.getAttribute("data-index");
-    AddtoCart(products[i]);
+    addToCart(products[i]);
     getTotal(products[i]);
   });
 });
 
-function AddtoCart(product) {
-  const cart = document.getElementById("cart");
+function addToCart(product) {
+  cartProducts.push(product);
+  console.log(cartProducts);
+  cartRender();
+}
 
-  cart.innerHTML += `
-  <div class="product">
-          <img
-            src="${product.image}"
-            alt="${product.alt}"
-          />
-          <div class="productDesc">
-            <h3>${product.name}</h3>
-            <p>${product.price}</p>
-          </div>
-        </div>
+const cart = document.getElementById("cart");
+
+function cartRender() {
+  cart.innerHTML = "";
+
+  for (let i = 0; i < cartProducts.length; i++) {
+    const element = cartProducts[i];
+
+    cart.innerHTML += `
+            <h3>${cartProducts[i].name}</h3>
+            <p>$${cartProducts[i].price}</p>       
   `;
+  }
 }
 
 const totalPrice = document.getElementById("total");
@@ -69,4 +77,48 @@ function getTotal(product) {
   totalPrice.innerHTML = `
   <h2>$${total}</h2>
   `;
+
+  return total;
+}
+
+class Invoice extends GeneratePdf {
+  printItems() {
+    for (let i = 0; i < cartProducts.length; i++) {
+      const element = cartProducts[i];
+      this.addText(`${element.name} - $${element.price}`);
+    }
+  }
+
+  printTotal() {
+    this.addText(`Total: $${total}`);
+  }
+}
+
+const preview = document.getElementById("view");
+
+preview.addEventListener("click", function () {
+  generateInvoice();
+});
+
+function generateInvoice() {
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString();
+
+  const invCont = document.getElementById("invoiceCont");
+  invCont.innerHTML = `
+    <iframe id="invoice" src="" frameborder="0"></iframe>`;
+
+  const myPDF = new Invoice("invoice");
+
+  myPDF.addHeader("Invoice        Tiramisu");
+  myPDF.addText(`Date: ${formattedDate}`);
+  myPDF.printItems();
+  myPDF.printTotal();
+  myPDF.showPdf();
+
+  let down = document.getElementById("download");
+
+  down.addEventListener("click", function () {
+    myPDF.downloadPdf();
+  });
 }
