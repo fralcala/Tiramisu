@@ -5,10 +5,6 @@
 In this project we implement pdfGenerator and use Node.js HTTP. Each member has their own prompt that they work on.
 Our project topic is tiramisu, we chose tiramisu because it is a dessert and it tastes good.
 
-### Live Link
-
-[Blog Page](https://github.com/fralcala/Tiramisu)
-
 ### Key Takeaways
 
 Understanding of why we are doing this project
