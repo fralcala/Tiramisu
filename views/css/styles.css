@@ -227,10 +227,27 @@ ul {
     border: none;
   }
 
-  .course-button:hover {
-    background-color: #4c2b15;
+  .course-button:active {
+    background-color: #ac7035;
     transform: translateY(4px);
   }
+}
+
+#pdf-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  margin-top: 50px;
+  background-color: #ac7035;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+
+.passed input {
+  height: 25px;
+  padding: 3px;
+  margin-right: 15px;
 }
 
 /* Footer css */
