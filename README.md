@@ -7,7 +7,7 @@ Our project topic is tiramisu, we chose tiramisu because it is a dessert and it 
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)
+[Blog Page](https://github.com/fralcala/Tiramisu)
 
 ### Key Takeaways
 
@@ -18,32 +18,34 @@ Understanding of why we are doing this project
 List color palette used and rationale for top level layout decisions.
 
 **Font Style**
-``` 
+
+```
 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 ```
 
 **Brown Derby**
+
 - #4c2B15
 
 - Used for: Titles, bold text, design in nav, buttons
 
-
 **Cooper**
+
 - #AC7035
 
 - Used for: Subtitles, buttons, hover
 
 **Bone**
+
 - #DECAB2
 
 - Used for: Backgrounds
 
-
 **White**
+
 - #fff
 
 - Used for: Backgrounds
-
 
 ### Members & Responsibilities
 
@@ -65,15 +67,12 @@ Designer – Write Design Choices section || Restaurant Menu Receipt
 
 Analyst – Write Key Takeaways section || Event Ticket Prompt
 
+- Learned how to use Node.jsto create a basic web server and serves different pages.
 
-- Learned how to use Node.jsto create a basic web server and serves different pages.  
+- Used js classes to organize code and extend from app.js parent class.
 
-- Used js classes to organize code and extend from app.js parent class.  
+- Created interactive PDFs that users can preview and download.
 
-- Created interactive PDFs that users can preview and download.  
+- Practiced frontend and backend by linking HTML, JavaScript, and a server.
 
-- Practiced frontend and backend by linking HTML, JavaScript, and a server.  
-
-- Improved teamwork skills by working on separate modules while sharing common code.  
-
-
+- Improved teamwork skills by working on separate modules while sharing common code.
